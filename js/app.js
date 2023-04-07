@@ -68,14 +68,37 @@
 
 // Switch case
 
-const role = "qdmin";
-switch (role) {
-  case "Manager":
-    console.log("I am manager");
-    break;
-  case "Admin":
-    console.log("admin");
+// const role = "qdmin";
+// switch (role) {
+//   case "Manager":
+//     console.log("I am manager");
+//     break;
+//   case "Admin":
+//     console.log("admin");
+//     break;
+//   default:
+//     console.log("Bezrabotny");
+// }
+
+// Ternary Operations
+// const bmw = 10000;
+// const audi = 8000;
+// const budget = 8500;
+// const message = `У меня денег хватет если куплю ${budget>bmw ? bmw : audi}`
+// console.log(message)
+
+// Zadacha 3
+
+let userEntered = prompt("7 + - 15");
+
+let message;
+switch (true) {
+  case userEntered === 'Я не робот':
+  case Number(userEntered) === 22:
+  case Number(userEntered) === -8:
+    message = 'Успех';
     break;
   default:
-    console.log("Bezrabotny");
+    message = "Ты робот";
 }
+console.log(message);
