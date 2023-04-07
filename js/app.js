@@ -103,3 +103,21 @@
 // }
 // console.log(message);
 
+// Zadacha 4
+
+// --- Balance bolwe 1000 ili bonus balance 100
+// --- On ne zabanen isBanned
+// --- Igra ne kupleno isExist
+// --- Igra v prodaje isSelling
+
+// const balance = 899;
+// const bonusBalance = 277;
+// const isBanned = false;
+// const isExist = false;
+// const isSelling = true;
+// const canBuy =
+//   (balance >= 1000 || bonusBalance >= 100) &&
+//   !isBanned &&
+//   !isExist &&
+//   isSelling;
+// console.log(`Могу купить игру: ${canBuy ? 'да' : 'нет'}`);
