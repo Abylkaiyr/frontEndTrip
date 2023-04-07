@@ -89,16 +89,17 @@
 
 // Zadacha 3
 
-let userEntered = prompt("7 + - 15");
+// let userEntered = prompt("7 + - 15");
 
-let message;
-switch (true) {
-  case userEntered === 'Я не робот':
-  case Number(userEntered) === 22:
-  case Number(userEntered) === -8:
-    message = 'Успех';
-    break;
-  default:
-    message = "Ты робот";
-}
-console.log(message);
+// let message;
+// switch (true) {
+//   case userEntered === 'Я не робот':
+//   case Number(userEntered) === 22:
+//   case Number(userEntered) === -8:
+//     message = 'Успех';
+//     break;
+//   default:
+//     message = "Ты робот";
+// }
+// console.log(message);
+
