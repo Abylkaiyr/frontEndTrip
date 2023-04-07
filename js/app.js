@@ -121,3 +121,54 @@
 //   !isExist &&
 //   isSelling;
 // console.log(`Могу купить игру: ${canBuy ? 'да' : 'нет'}`);
+
+// function logName(){
+//   console.log('Мое имя Антон')
+// }
+
+// logName();
+
+// Ананомные функций
+
+// function powerOfTwo(num) {
+//   return num * num;
+// }
+
+// console.log(powerOfTwo(5))
+
+// const poft = (num) => num*num;
+// console.log(poft)
+
+// Zadacha 5
+
+// const pof = (num, power) => num ** power;
+// console.log(pof(2, 5));
+
+// const canAccess = (age) => (age < 18 ? "No" : "Yes");
+// console.log(typeof canAccess);
+// console.log(canAccess(19));
+
+// Zadacha 6
+const userAge = 24;
+const userWork = true;
+const userMoney = 1500;
+
+console.log(
+  canUserBuy(userAge, userWork, userMoney) >= 2000
+    ? "Сможет купить"
+    : "Не сможет купить"
+);
+
+function canUserBuy(userAge, userWork, userMoney) {
+  if (userMoney > 2000) {
+    return userMoney;
+  } else {
+    if (userAge >= 24 && userWork) {
+      return userMoney + 500;
+    } else if (userAge >= 24 && !userWork) {
+      return userMoney + 100;
+    } else {
+      return userMoney;
+    }
+  }
+}
