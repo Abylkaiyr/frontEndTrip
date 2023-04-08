@@ -149,26 +149,38 @@
 // console.log(canAccess(19));
 
 // Zadacha 6
-const userAge = 24;
-const userWork = true;
-const userMoney = 1500;
+// const userAge = 24;
+// const userWork = true;
+// const userMoney = 1500;
 
-console.log(
-  canUserBuy(userAge, userWork, userMoney) >= 2000
-    ? "Сможет купить"
-    : "Не сможет купить"
-);
+// console.log(
+//   canUserBuy(userAge, userWork, userMoney) >= 2000
+//     ? "Сможет купить"
+//     : "Не сможет купить"
+// );
 
-function canUserBuy(userAge, userWork, userMoney) {
-  if (userMoney > 2000) {
-    return userMoney;
-  } else {
-    if (userAge >= 24 && userWork) {
-      return userMoney + 500;
-    } else if (userAge >= 24 && !userWork) {
-      return userMoney + 100;
-    } else {
-      return userMoney;
-    }
-  }
-}
+// function canUserBuy(userAge, userWork, userMoney) {
+//   if (userMoney > 2000) {
+//     return userMoney;
+//   } else {
+//     if (userAge >= 24 && userWork) {
+//       return userMoney + 500;
+//     } else if (userAge >= 24 && !userWork) {
+//       return userMoney + 100;
+//     } else {
+//       return userMoney;
+//     }
+//   }
+// }
+
+// Massivi v JS
+
+// const roles = ["Anton", "Larichev", "Maxim", "Galkin"];
+// roles.push('Erema')
+// roles.unshift('Vasya')
+// console.log(roles)
+
+const roles = ["user", "admin", "manager", "hero", "JackWilsher"];
+const newRoles = roles.splice(1,10);
+console.log(roles)
+console.log(newRoles)
