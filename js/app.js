@@ -180,7 +180,14 @@
 // roles.unshift('Vasya')
 // console.log(roles)
 
-const roles = ["user", "admin", "manager", "hero", "JackWilsher"];
-const newRoles = roles.splice(1,10);
-console.log(roles)
-console.log(newRoles)
+// const roles = ["user", "admin", "manager", "hero", "JackWilsher"];
+// const newRoles = roles.splice(1,10);
+// console.log(roles)
+// console.log(newRoles)
+
+// Rest operator
+// const data = [1, 2, 3, 4, 5, 6, 7, 8];
+// const [one, two, ...others] = data;
+// console.log(one, two, others)
+
+
