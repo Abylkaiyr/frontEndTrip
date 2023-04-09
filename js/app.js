@@ -190,4 +190,8 @@
 // const [one, two, ...others] = data;
 // console.log(one, two, others)
 
+const url = "https://purpleschool.ru/course/javascript";
 
+function getURLparams(url) {
+  const [protoc, _, host, ...path] = url.split("/");
+}
