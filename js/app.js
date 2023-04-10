@@ -190,8 +190,49 @@
 // const [one, two, ...others] = data;
 // console.log(one, two, others)
 
-const url = "https://purpleschool.ru/course/javascript";
+// const url = "https://purpleschool.ru/course/javascript";
 
-function getURLparams(url) {
-  const [protoc, _, host, ...path] = url.split("/");
+// function getURLparams(url) {
+//   const [protoc, _, host, ...path] = url.split("/");
+// }
+
+// loop
+
+// const tasks = ["task1", "task2", "task3"];
+
+// for (let i = 0; i < tasks.length; i++) {
+//   if (tasks[i] === "task2") {
+//     continue;
+//   }
+//   console.log(tasks[i]);
+// }
+
+// const arr = ["!", "JS", "LOVE", "I"];
+// console.log(arr.reverse().join(' '))
+
+//  for of
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// for (let element of arr) {
+//   console.log(element);
+// }
+
+// Zadacha
+
+//
+
+function add(a, b) {
+  return a + b;
 }
+
+function subtract(a, b) {
+  return a - b;
+}
+
+// Функция высшего порядка
+function calculate(a, b, fn) {
+  console.log(fn.name)
+  return fn(a, b);
+}
+
+console.log(calculate(5, 3, add));
