@@ -221,18 +221,69 @@
 
 //
 
-function add(a, b) {
-  return a + b;
-}
+// function add(a, b) {
+//   return a + b;
+// }
 
-function subtract(a, b) {
-  return a - b;
-}
+// function subtract(a, b) {
+//   return a - b;
+// }
 
-// Функция высшего порядка
-function calculate(a, b, fn) {
-  console.log(fn.name)
-  return fn(a, b);
-}
+// // Функция высшего порядка
+// function calculate(a, b, fn) {
+//   console.log(fn.name)
+//   return fn(a, b);
+// }
 
-console.log(calculate(5, 3, add));
+// console.log(calculate(5, 3, add));
+
+// function power(pow) {
+//   return function (number) {
+//     return number ** pow;
+//   };
+// }
+
+// const powerOfTwo = power(2);
+// console.log(powerOfTwo(5));
+
+// const power = pow => num => num**pow;
+
+// const score = [5, 10, 0, 15];
+// const iterator = (el) => {
+//   console.log(`Round ${el}`);
+// };
+// score.forEach(iterator);
+
+// const transactions = [10, -7, 50, -10, 100];
+// // const transactions2 = transactions.map((transaction)=>{
+// //  return transaction*50;
+// // });
+// // console.log(transactions2)
+
+// const positiveTransactions = transactions.filter((operation) => {
+//   return operation > 0;
+// });
+
+// console.log(positiveTransactions)
+
+// const operations = [100, 20, -65, 0, 1];
+// const finalBalance = operations.reduce((acc, value) => {
+//   return acc += value;
+// }, 0);
+// console.log(finalBalance);
+
+// const arr = [1, 4, 4, 3];
+// const avg = arr.reduce((acc, el, i)=>{
+//   if (i!=arr.length) {
+//     return acc+el;
+//   } else {
+//     return (acc+el)/arr.length
+//   }
+// }, 0)
+
+// console.log(avg)
+
+// let b = arr.find((el) => el < 5);
+// console.log(b)
+// arr.sort((a, b) => b - a)
+// console.log(arr);
