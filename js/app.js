@@ -1,15 +1,23 @@
-'use strict'
-const audi = {
-    make: 'audi',
-    model: 'A3',
-    year: 2009,
-    damages: [],
-    addDamage(part, rate){
-        this.damages.push({
-            part,
-            rate
-        })
-    }
+"use strict";
+
+// document.querySelector(".button").addEventListener("click", function (e) {});
+
+function submitForm() {
+  const input = document.querySelector(".input").value;
+  if (!input) {
+    return;
+  }
+  document.querySelector(".panel").innerText = input;
+  document.querySelector(".input").value = "";
+  document.querySelector(".notification").style.display = "block";
+  const textString = JSON.stringify({
+    text: input,
+  });
+  localStorage.setItem('text', textString)
 }
 
-audi.addDamage('Капот', 1)
+function changeInput(e) {
+  if (e.code == "Enter") {
+    submitForm();
+  }
+}
